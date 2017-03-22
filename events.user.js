@@ -42,11 +42,11 @@ EventMerger.prototype = {
         });
     },
     makeStripes: function ($element, colors) {
-        var gradient = "repeating-linear-gradient( 45deg,",
+        var gradient = "repeating-linear-gradient( 0deg,",
             pos = 0;
         $.each(colors, function (i, color) {
             gradient += color + " " + pos + "px,";
-            pos += 10;
+            pos += 20;
             gradient += color + " " + pos + "px,";
         });
         gradient = gradient.slice(0, -1);
